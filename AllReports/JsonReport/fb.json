@@ -1,0 +1,292 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7816637100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login facebook application through chrome browser",
+            "match": {
+              "location": "StepDefinition.user_login_facebook_application_through_chrome_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-30T11:07:17.607Z",
+        "line": 8,
+        "name": "To validate forgot passwrord",
+        "description": "",
+        "id": "to-validate-forgot-password-page-in-facebook;to-validate-forgot-passwrord",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1861058000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks forgot password link",
+            "match": {
+              "location": "StepDefinition.user_clicks_forgot_password_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 156734700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user searches the account linked with mobilenumber",
+            "match": {
+              "location": "StepDefinition.user_searches_the_account_linked_with_mobilenumber(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "Siva"
+                ]
+              },
+              {
+                "cells": [
+                  "mailid",
+                  "siva@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "phno",
+                  "98745214741"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3219656600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click search",
+            "match": {
+              "location": "StepDefinition.user_click_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4253230800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should close the browser",
+            "match": {
+              "location": "StepDefinition.user_should_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Forgot"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To validate forgot password page in facebook",
+    "description": "",
+    "id": "to-validate-forgot-password-page-in-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Featurefiles/ForgotPass.feature",
+    "tags": [
+      {
+        "name": "@Forgot",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3290928700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login facebook application through chrome browser",
+            "match": {
+              "location": "StepDefinition.user_login_facebook_application_through_chrome_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-30T11:07:34.967Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1535200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.befScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "To validate login funtionality",
+        "description": "",
+        "id": "to-validate-login-functionality-of-facebook-application;to-validate-login-funtionality",
+        "after": [
+          {
+            "result": {
+              "duration": 402400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aftScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 328146700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter valid email and invalid password",
+            "match": {
+              "location": "StepDefinition.user_enter_valid_email_and_invalid_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "selenium",
+                  "selenium07.98@yahoo.com",
+                  "87451"
+                ]
+              },
+              {
+                "cells": [
+                  "siva",
+                  "siva@gmail.com",
+                  "sivas874210"
+                ]
+              },
+              {
+                "cells": [
+                  "automation",
+                  "automationsel@gmail.com",
+                  "1234"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7222900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is in invalid credentials page",
+            "match": {
+              "location": "StepDefinition.user_is_in_invalid_credentials_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4183880600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should close the browser",
+            "match": {
+              "location": "StepDefinition.user_should_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Forgot"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionality of facebook application",
+    "description": "",
+    "id": "to-validate-login-functionality-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Featurefiles/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Forgot",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
